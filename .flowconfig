@@ -1,0 +1,15 @@
+[ignore]
+
+[include]
+
+[libs]
+node_modules/@babel/types/lib/index.js.flow
+
+[lints]
+
+[options]
+
+[strict]
+
+[version]
+0.93.0

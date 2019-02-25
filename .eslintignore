@@ -1,0 +1,4 @@
+flow-typed/**
+lib/**
+.eslintrc.js
+*.js.flow

@@ -1,0 +1,43 @@
+{
+  "name": "@playlyfe/relay-compiler-language-flow",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Mayank Agarwal <mayank1791989@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "yarn lint && yarn testonly",
+    "testonly": "env NODE_ENV=test jest",
+    "lint": "yarn eslint src",
+    "build": "babel ./src --out-dir=./lib --source-maps --verbose --delete-dir-on-start --ignore '**/__tests__/**'"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.3",
+    "@babel/node": "7.2.2",
+    "babel-jest": "24.1.0",
+    "babel-preset-playlyfe": "3.1.0",
+    "eslint": "5.14.1",
+    "eslint-plugin-playlyfe": "6.2.1",
+    "flow-bin": "0.93.0",
+    "graphql": "0.13.2",
+    "jest": "24.1.0",
+    "prettier": "1.16.4",
+    "relay-test-utils": "1.7.0"
+  },
+  "dependencies": {
+    "@babel/parser": "7.3.3",
+    "@babel/types": "7.3.3",
+    "fbjs": "1.0.0",
+    "graphql-compiler": "1.7.0",
+    "relay-compiler": "1.7.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
